@@ -3,7 +3,24 @@ let rollButton = document.getElementById('roll')
 let score1 = document.getElementById('score1')
 let roll2Button = document.getElementById('roll2')
 let roll3Button = document.getElementById('roll3')
-
+let totalScore = 0
+let finalTotalScore = 0
+let playerScoreEl = document.getElementById('playerScore')
+let aScore = 0
+let bScore = 0
+let cScore = 0
+let dScore = 0
+let eScore = 0
+let fScore = 0
+let total1 = 0
+let total2 = 0
+let total3 = 0
+let total4 = 0
+let total5 = 0
+let total6 = 0
+let pairCount = 0
+let tripleCount = 0
+let finishButton = document.getElementById('finish')
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max))
@@ -12,7 +29,7 @@ function getRandomInt(max) {
 function playerRoll () {
     rollButton.classList.add('remove')
     roll2Button.classList.remove('remove')
-
+    finishButton.classList.remove('remove')
     aDice1.classList.add('remove')
     aDice2.classList.add('remove')
     aDice3.classList.add('remove')
@@ -181,29 +198,25 @@ rollButton.addEventListener('click', playerRoll)
 
 
 function keepDiceA () {
-    if (a === 1) {
-        aa=1 
-        aaa=1  
+    aa=a
+    aaa=aa
+    if (a === 1){
+        total1 = total1 + 1
     }
-    if (a === 2) {
-      aa=2
-      aaa=2   
+    if (a === 2){
+        total2 = total2 + 1
     }
-    if (a === 3) {
-     aa=3
-     aaa=3 
+    if (a === 3){
+        total3 = total3 + 1
     }
-    if (a === 4) {
-      aa=4
-      aaa=4 
+    if (a === 4){
+        total4 = total4 + 1
     }
-    if (a === 5) {
-      aa=5
-      aaa=5   
+    if (a===5) {
+        total5 = total5 + 1
     }
-    if (a === 6) {
-      aa=6
-      aaa=6  
+    if (a === 6){
+        total6 = total6 + 1
     }
 }
 aDice1.addEventListener('click', keepDiceA)
@@ -216,30 +229,26 @@ aDice6.addEventListener('click', keepDiceA)
 
 
 function keepDiceB () {
-    if (b === 1) {
-       bb =1
-       bbb=1    
-    }
-    if (b === 2) {
-      bb=2
-      bbb=2 
-    }
-    if (b === 3) {
-     bb=3
-     bbb=3
-    }
-    if (b === 4) {
-      bb=4
-      bbb=4 
-    }
-    if (b === 5) {
-      bb=5  
-      bbb=5 
-    }
-    if (b === 6) {
-      bb=6 
-      bbb=6
-    }
+bb=b
+bbb=bb
+if (b === 1){
+    total1 = total1 + 1
+}
+if (b === 2){
+    total2 = total2 + 1
+}
+if (b === 3){
+    total3 = total3 + 1
+}
+if (b === 4){
+    total4 = total4 + 1
+}
+if (b===5) {
+    total5 = total5 + 1
+}
+if (b === 6){
+    total6 = total6 + 1
+}
 }
 bDice1.addEventListener('click', keepDiceB)
 bDice2.addEventListener('click', keepDiceB)
@@ -250,31 +259,26 @@ bDice6.addEventListener('click', keepDiceB)
 
 
 function keepDiceC () {
-    if (c === 1) {
-        cc=1 
-        ccc=1  
-    }
-    if (c === 2) {
-      cc=2  
-      ccc=2 
-    }
-    if (c === 3) {
-     cc=3
-     ccc=3
-    }
-    if (c === 4) {
-      cc=4
-      ccc=4 
-    }
-    if (c === 5) {
-      cc=5 
-       ccc=5
-     
-    }
-    if (c === 6) {
-      cc=6 
-      ccc=6
-    }
+   cc=c
+   ccc=cc
+   if (c === 1){
+    total1 = total1 + 1
+}
+if (c === 2){
+    total2 = total2 + 1
+}
+if (c === 3){
+    total3 = total3 + 1
+}
+if (c === 4){
+    total4 = total4 + 1
+}
+if (c===5) {
+    total5 = total5 + 1
+}
+if (c === 6){
+    total6 = total6 + 1
+}
 }
 cDice1.addEventListener('click', keepDiceC)
 cDice2.addEventListener('click', keepDiceC)
@@ -285,29 +289,25 @@ cDice6.addEventListener('click', keepDiceC)
 
 
 function keepDiceD () {
-    if (d === 1) {
-       dd =1 
-       ddd=1  
+      dd=d 
+      ddd=d
+      if (d === 1){
+        total1 = total1 + 1
     }
-    if ( d=== 2) {
-      dd=2  
-      ddd=2
+    if (d === 2){
+        total2 = total2 + 1
     }
-    if (d === 3) {
-     dd=3
-     ddd=3
+    if (d === 3){
+        total3 = total3 + 1
     }
-    if (d === 4) {
-      dd=4
-      ddd=4
+    if (d === 4){
+        total4 = total4 + 1
     }
-    if (d === 5) {
-      dd=5  
-      ddd=5
+    if (d===5) {
+        total5 = total5 + 1
     }
-    if (d === 6) {
-      dd=6 
-      ddd=6
+    if (d === 6){
+        total6 = total6 + 1
     }
 }
 dDice1.addEventListener('click', keepDiceD)
@@ -318,30 +318,26 @@ dDice5.addEventListener('click', keepDiceD)
 dDice6.addEventListener('click', keepDiceD)
 
 function keepDiceE () {
-    if (e === 1) {
-        ee=1  
-        eee= 1
-    }
-    if (e === 2) {
-      ee=2 
-      eee=2 
-    }
-    if (e === 3) {
-     ee=3
-     eee=3
-    }
-    if (e === 4) {
-      ee=4
-      eee=4
-    }
-    if (e === 5) {
-      ee=5 
-      eee=5 
-    }
-    if (e === 6) {
-      ee=6 
-      eee=6
-    }
+        ee=e 
+        eee= ee
+        if (e === 1){
+            total1 = total1 + 1
+        }
+        if (e === 2){
+            total2 = total2 + 1
+        }
+        if (e === 3){
+            total3 = total3 + 1
+        }
+        if (e === 4){
+            total4 = total4 + 1
+        }
+        if (e===5) {
+            total5 = total5 + 1
+        }
+        if (e === 6){
+            total6 = total6 + 1
+        }
 }
 eDice1.addEventListener('click', keepDiceE)
 eDice2.addEventListener('click', keepDiceE)
@@ -351,29 +347,25 @@ eDice5.addEventListener('click', keepDiceE)
 eDice6.addEventListener('click', keepDiceE)
 
 function keepDiceF () {
-    if (f === 1) {
-        ff=1 
-        fff=1  
+      ff=f
+      fff=ff
+    if (f === 1){
+        total1 = total1 + 1
     }
-    if (f === 2) {
-      ff=2 
-      fff=2 
+    if (f === 2){
+        total2 = total2 + 1
     }
-    if (f === 3) {
-     ff=3
-     fff=3
+    if (f === 3){
+        total3 = total3 + 1
     }
-    if (f === 4) {
-      ff=4
-      fff=4
+    if (f === 4){
+        total4 = total4 + 1
     }
-    if (f === 5) {
-      ff=5 
-      fff=5 
+    if (f===5) {
+        total5 = total5 + 1
     }
-    if (f === 6) {
-      ff=6 
-      fff=6
+    if (f === 6){
+        total6 = total6 + 1
     }
 }
 fDice1.addEventListener('click', keepDiceF)
@@ -697,8 +689,120 @@ if (f === 6) {
 }
 }
 
+finishButton.addEventListener('click', finishTurn)
+function finishTurn () {
+    if (total1 === 1) {
+        totalScore = totalScore +100
+    }
+    if (total5 === 1) {
+        totalScore = totalScore +50
+    }
 
+    if (total1 === 2){
+        pairCount = pairCount + 1
+    }
+    if (total2 === 2) {
+        pairCount = pairCount + 1
+    }
+    if (total3 === 2) {
+        pairCount = pairCount + 1
+    }
+    if (total4 === 2) {
+        pairCount = pairCount + 1
+    }
+    if (total5 === 2) {
+        pairCount = pairCount + 1
+    }
+    if (total6 === 2) {
+        pairCount = pairCount + 1
+    }
+    if (pairCount === 3) {
+        totalScore= totalScore + 1500
+    }
 
+    if (total1 === 3) {
+        totalScore= totalScore + 300
+        tripleCount = tripleCount + 1 
+    }
+    if (total2 === 3) {
+        totalScore= totalScore + 200
+        tripleCount = tripleCount + 1
+    }
+    if (total3 === 3) {
+        totalScore= totalScore + 300
+        tripleCount = tripleCount + 1
+    }
+    if (total4 === 3) {
+        totalScore= totalScore + 400
+        tripleCount = tripleCount + 1
+    }
+    if (total5 === 3) {
+        totalScore= totalScore + 350
+        tripleCount = tripleCount + 1
+    }
+    if (total6 === 3) {
+        totalScore= totalScore + 600
+        tripleCount = tripleCount + 1
+    }
+if (tripleCount === 0){
+    totalScore === totalScore + 2500
+}
+    if (total1 === 4){
+        totalScore = totalScore + 1000
+    }
+    if (total2 === 4) {
+        totalScore = totalScore + 1000
+    }
+    if (total3 === 4) {
+        totalScore = totalScore + 1000
+    }
+    if (total4 === 4) {
+        totalScore = totalScore + 1000
+    }
+    if (total5 === 4) {
+        totalScore = totalScore + 1000
+    }
+    if (total6 === 4) {
+        totalScore = totalScore + 1000
+    }
+    if (total1 === 5){
+        totalScore = totalScore + 2000
+    }
+    if (total2 === 5) {
+        totalScore = totalScore + 2000
+    }
+    if (total3 === 5) {
+        totalScore = totalScore + 2000
+    }
+    if (total4 === 5) {
+        totalScore = totalScore + 2000
+    }
+    if (total5 === 5) {
+        totalScore = totalScore + 2000
+    }
+    if (total6 === 5) {
+        totalScore = totalScore + 2000
+    }
 
+    if (total1 === 6){
+        totalScore = totalScore + 3000
+    }
+    if (total2 === 6) {
+        totalScore = totalScore + 3000
+    }
+    if (total3 === 6) {
+        totalScore = totalScore + 3000
+    }
+    if (total4 === 6) {
+        totalScore = totalScore + 3000
+    }
+    if (total5 === 6) {
+        totalScore = totalScore + 3000
+    }
+    if (total6 === 6) {
+        totalScore = totalScore + 3000
+    }
+finalTotalScore= totalScore+aScore+bScore+cScore+dScore+eScore+fScore
 
-
+playerScoreEl.innerHTML = finalTotalScore
+}
