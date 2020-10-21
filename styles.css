@@ -9,3 +9,8 @@ img {
  width: 100px;
  height: 100px;
 }
+.select {
+border-width: 5px;
+border-style: groove;
+border-color: blue;
+}

@@ -27,6 +27,42 @@ let total6 = 0
 let pairCount = 0
 let tripleCount = 0
 
+let aDice1 = document.getElementById('aDice1')
+let aDice2 = document.getElementById('aDice2')
+let aDice3 = document.getElementById('aDice3')
+let aDice4 = document.getElementById('aDice4')
+let aDice5 = document.getElementById('aDice5')
+let aDice6 = document.getElementById('aDice6')
+let bDice1 = document.getElementById('bDice1')
+let bDice2 = document.getElementById('bDice2')
+let bDice3 = document.getElementById('bDice3')
+let bDice4 = document.getElementById('bDice4')
+let bDice5 = document.getElementById('bDice5')
+let bDice6 = document.getElementById('bDice6')
+let cDice1 = document.getElementById('cDice1')
+let cDice2 = document.getElementById('cDice2')
+let cDice3 = document.getElementById('cDice3')
+let cDice4 = document.getElementById('cDice4')
+let cDice5 = document.getElementById('cDice5')
+let cDice6 = document.getElementById('cDice6')
+let dDice1 = document.getElementById('dDice1')
+let dDice2 = document.getElementById('dDice2')
+let dDice3 = document.getElementById('dDice3')
+let dDice4 = document.getElementById('dDice4')
+let dDice5 = document.getElementById('dDice5')
+let dDice6 = document.getElementById('dDice6')
+let eDice1 = document.getElementById('eDice1')
+let eDice2 = document.getElementById('eDice2')
+let eDice3 = document.getElementById('eDice3')
+let eDice4 = document.getElementById('eDice4')
+let eDice5 = document.getElementById('eDice5')
+let eDice6 = document.getElementById('eDice6')
+let fDice1 = document.getElementById('fDice1')
+let fDice2 = document.getElementById('fDice2')
+let fDice3 = document.getElementById('fDice3')
+let fDice4 = document.getElementById('fDice4')
+let fDice5 = document.getElementById('fDice5')
+let fDice6 = document.getElementById('fDice6')
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max))
@@ -39,21 +75,27 @@ function keepDiceA () {
     aaaa=aaa
     if (a === 1){
         total1 = total1 + 1
+        aDice1.classList.add('select')
     }
     if (a === 2){
         total2 = total2 + 1
+        aDice2.classList.add('select')
     }
     if (a === 3){
         total3 = total3 + 1
+        aDice3.classList.add('select')
     }
     if (a === 4){
         total4 = total4 + 1
+        aDice4.classList.add('select')
     }
     if (a===5) {
         total5 = total5 + 1
+        aDice5.classList.add('select')
     }
     if (a === 6){
         total6 = total6 + 1
+        aDice6.classList.add('select')
     }
 }
 aDice1.addEventListener('click', keepDiceA)
@@ -71,21 +113,27 @@ bbb = bb
 bbbb = bbb
 if (b === 1){
     total1 = total1 + 1
+    aDice1.classList.add('select')
 }
 if (b === 2){
     total2 = total2 + 1
+    bDice2.classList.add('select')
 }
 if (b === 3){
     total3 = total3 + 1
+    bDice3.classList.add('select')
 }
 if (b === 4){
     total4 = total4 + 1
+    bDice4.classList.add('select')
 }
 if (b===5) {
     total5 = total5 + 1
+    bDice5.classList.add('select')
 }
 if (b === 6){
     total6 = total6 + 1
+    bDice6.classList.add('select')
 }
 }
 bDice1.addEventListener('click', keepDiceB)
@@ -100,23 +148,29 @@ function keepDiceC () {
    cc = c
    ccc = cc
    cccc = ccc
-   if (c === 1){
+if (c === 1){
     total1 = total1 + 1
+    cDice1.classList.add('select')
 }
 if (c === 2){
     total2 = total2 + 1
+    cDice2.classList.add('select')
 }
 if (c === 3){
     total3 = total3 + 1
+    cDice3.classList.add('select')
 }
 if (c === 4){
     total4 = total4 + 1
+    cDice4.classList.add('select')
 }
 if (c===5) {
     total5 = total5 + 1
+    cDice5.classList.add('select')
 }
 if (c === 6){
     total6 = total6 + 1
+    cDice6.classList.add('select')
 }
 }
 cDice1.addEventListener('click', keepDiceC)
@@ -131,23 +185,29 @@ function keepDiceD () {
       dd=d 
       ddd=dd
       dddd=ddd
-      if (d === 1){
+    if (d === 1){
         total1 = total1 + 1
+        dDice1.classList.add('select')
     }
     if (d === 2){
         total2 = total2 + 1
+        dDice2.classList.add('select')
     }
     if (d === 3){
         total3 = total3 + 1
+        dDice3.classList.add('select')
     }
     if (d === 4){
         total4 = total4 + 1
+        dDice4.classList.add('select')
     }
     if (d===5) {
         total5 = total5 + 1
+        dDice5.classList.add('select')
     }
     if (d === 6){
         total6 = total6 + 1
+        dDice6.classList.add('select')
     }
 }
 dDice1.addEventListener('click', keepDiceD)
@@ -163,21 +223,27 @@ function keepDiceE () {
         eeee = eee
         if (e === 1){
             total1 = total1 + 1
+            eDice1.classList.add('select')
         }
         if (e === 2){
             total2 = total2 + 1
+            eDice2.classList.add('select')
         }
         if (e === 3){
             total3 = total3 + 1
+            eDice3.classList.add('select')
         }
         if (e === 4){
             total4 = total4 + 1
+            eDice4.classList.add('select')
         }
         if (e===5) {
             total5 = total5 + 1
+            eDice5.classList.add('select')
         }
         if (e === 6){
             total6 = total6 + 1
+            eDice6.classList.add('select')
         }
 }
 eDice1.addEventListener('click', keepDiceE)
@@ -193,21 +259,27 @@ function keepDiceF () {
       ffff=fff
     if (f === 1){
         total1 = total1 + 1
+        fDice1.classList.add('select')
     }
     if (f === 2){
         total2 = total2 + 1
+        fDice2.classList.add('select')
     }
     if (f === 3){
         total3 = total3 + 1
+        fDice3.classList.add('select')
     }
     if (f === 4){
         total4 = total4 + 1
+        fDice4.classList.add('select')
     }
     if (f===5) {
         total5 = total5 + 1
+        fDice5.classList.add('select')
     }
     if (f === 6){
         total6 = total6 + 1
+        fDice6.classList.add('select')
     }
 }
 fDice1.addEventListener('click', keepDiceF)
@@ -223,7 +295,7 @@ function playerRoll () {
     rollButton.classList.add('remove')
     roll2Button.classList.remove('remove')
     finishButton.classList.remove('remove')
-    a= getRandomInt(6) + 1
+a= getRandomInt(6) + 1
 b= getRandomInt(6) + 1
 c= getRandomInt(6) + 1
 d= getRandomInt(6) + 1
@@ -881,7 +953,7 @@ function finishTurn () {
         totalScore= totalScore + 600
         tripleCount = tripleCount + 1
     }
-if (tripleCount === 0){
+if (tripleCount === 2){
     totalScore === totalScore + 2500
 }
     if (total1 === 4){
@@ -990,6 +1062,42 @@ finishButton.classList.add('remove')
     fDice4.classList.add('remove')
     fDice5.classList.add('remove')
     fDice6.classList.add('remove')
+    aDice1.classList.remove('select')
+    aDice2.classList.remove('select')
+    aDice3.classList.remove('select')
+    aDice4.classList.remove('select')
+    aDice5.classList.remove('select')
+    aDice6.classList.remove('select')
+    bDice1.classList.remove('select')
+    bDice2.classList.remove('select')
+    bDice3.classList.remove('select')
+    bDice4.classList.remove('select')
+    bDice5.classList.remove('select')
+    bDice6.classList.remove('select')
+    cDice1.classList.remove('select')
+    cDice2.classList.remove('select')
+    cDice3.classList.remove('select')
+    cDice4.classList.remove('select')
+    cDice5.classList.remove('select')
+    cDice6.classList.remove('select')
+    dDice1.classList.remove('select')
+    dDice2.classList.remove('select')
+    dDice3.classList.remove('select')
+    dDice4.classList.remove('select')
+    dDice5.classList.remove('select')
+    dDice6.classList.remove('select')
+    eDice1.classList.remove('select')
+    eDice2.classList.remove('select')
+    eDice3.classList.remove('select')
+    eDice4.classList.remove('select')
+    eDice5.classList.remove('select')
+    eDice6.classList.remove('select')
+    fDice1.classList.remove('select')
+    fDice2.classList.remove('select')
+    fDice3.classList.remove('select')
+    fDice4.classList.remove('select')
+    fDice5.classList.remove('select')
+    fDice6.classList.remove('select')
 if (finalTotalScore >= 10000) {
     win1El.classList.remove('remove')
 }
@@ -1610,7 +1718,6 @@ function finishTurn2 () {
     if (total5 === 1) {
         totalScore = totalScore +50
     }
-
     if (total1 === 2){
         pairCount = pairCount + 1
         totalScore = totalScore +200
@@ -1659,7 +1766,7 @@ function finishTurn2 () {
         totalScore= totalScore + 600
         tripleCount = tripleCount + 1
     }
-if (tripleCount === 0){
+if (tripleCount === 2){
     totalScore === totalScore + 2500
 }
     if (total1 === 4){
@@ -1769,6 +1876,42 @@ aDice1.classList.add('remove')
     fDice4.classList.add('remove')
     fDice5.classList.add('remove')
     fDice6.classList.add('remove')
+    aDice1.classList.remove('select')
+    aDice2.classList.remove('select')
+    aDice3.classList.remove('select')
+    aDice4.classList.remove('select')
+    aDice5.classList.remove('select')
+    aDice6.classList.remove('select')
+    bDice1.classList.remove('select')
+    bDice2.classList.remove('select')
+    bDice3.classList.remove('select')
+    bDice4.classList.remove('select')
+    bDice5.classList.remove('select')
+    bDice6.classList.remove('select')
+    cDice1.classList.remove('select')
+    cDice2.classList.remove('select')
+    cDice3.classList.remove('select')
+    cDice4.classList.remove('select')
+    cDice5.classList.remove('select')
+    cDice6.classList.remove('select')
+    dDice1.classList.remove('select')
+    dDice2.classList.remove('select')
+    dDice3.classList.remove('select')
+    dDice4.classList.remove('select')
+    dDice5.classList.remove('select')
+    dDice6.classList.remove('select')
+    eDice1.classList.remove('select')
+    eDice2.classList.remove('select')
+    eDice3.classList.remove('select')
+    eDice4.classList.remove('select')
+    eDice5.classList.remove('select')
+    eDice6.classList.remove('select')
+    fDice1.classList.remove('select')
+    fDice2.classList.remove('select')
+    fDice3.classList.remove('select')
+    fDice4.classList.remove('select')
+    fDice5.classList.remove('select')
+    fDice6.classList.remove('select')
 if (finalTotalScore2 >= 10000) {
     win2El.classList.remove('remove')
 }
